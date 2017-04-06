@@ -1,3 +1,3 @@
-define(['aside','common'], function() {
+define(['aside'], function() {
 	
 });

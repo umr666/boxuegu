@@ -1,4 +1,4 @@
-define(['jquery','jqueryCookie', 'nprogress'], function($,undefine,nprogress) {
+define(['jquery','jqueryCookie', 'nprogress','loading'], function($,undefine,nprogress,undefine) {
 
 	var cookieArr = document.cookie.split('; ');
 	for(var i=0;i<cookieArr.length;i++){

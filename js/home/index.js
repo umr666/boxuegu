@@ -1,4 +1,4 @@
-define(['jquery','common','header','nprogress','aside'], function($,undefine,undefine,nprogress,undefine) {
+define(['jquery','common','header','nprogress','aside','loading'], function($,undefine,undefine,nprogress,undefine,undefine) {
 	// $.ajax({
 	// 	type: 'post',
 	// 	url: '/v6/login',
