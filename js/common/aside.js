@@ -55,7 +55,8 @@ define(['jquery', 'jqueryCookie', 'template'], function ($, undefine, template) 
 		 * */
 		
 		var pathHref = {
-			'/html/teacher/teacher_add.html': '/html/teacher/teacher_list.html'
+			'/html/teacher/teacher_add.html': '/html/teacher/teacher_list.html',
+            '/html/user/user_profile.html':'/html/teacher/teacher_list.html'
 		};
 		var pathname = location.pathname;
 		var aHref = pathHref[pathname]? pathHref[pathname]: pathname;
