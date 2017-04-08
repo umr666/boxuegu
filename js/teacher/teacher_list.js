@@ -11,5 +11,18 @@ define(['aside', 'header', 'loading', 'nprogress', 'jquery', 'template'], functi
 		});
     })();
 
+    (function(){
+        $(document).on('click','.teacher-view',function(){
+            $.get('/v6/teacher/view',{
+                tc_id: $(this).data('teacher-id')
+            },function(data){
+                if(data.code==200){
+                    $('#teacher-modal').html(template('teacher-view-tpl',data.result));
+                }
+                
+            })
+        })
+    })()
+
     nprogress.done();
 });
